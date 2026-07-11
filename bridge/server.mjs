@@ -1132,7 +1132,7 @@ function hueRequest(bridgeIp, pathname, options = {}) {
       port: 443,
       path: pathname,
       method,
-      rejectUnauthorized: false,
+      rejectUnauthorized: true,
       timeout: 10000,
       headers: {
         Accept: "application/json",
